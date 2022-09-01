@@ -64,4 +64,39 @@ span {
     color: #ff5353;
     font-size: 2em;
     margin-top: 20px;
+    animation: beat 2s ease-out infinite;
+}
+.shadow {
+    width: 40px;
+    height: 10px;
+    background: #4a676a;
+    opacity: .2;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 5px;
+    right: -20px;
+    left: 55px;
+    animation: beat_shadow 2s ease-out infinite;
+}
+@keyframes beat {
+    0%, 40%, 70%, 100%{
+      transform: scale(1) rotate(0deg);
+    }
+    20%,  {
+      transform: scale(1.6) rotate(0deg);
+    }
+    50%, 80% {
+      transform: scale(1.4) rotate(0deg);
+    }
+  }
+@keyframes beat_shadow {
+    0%, 40%, 70%, 100%{
+        transform: scale(1) rotate(0deg);
+      }
+      20%,  {
+        transform: scale(1.6) rotate(0deg);
+      }
+      50%, 80% {
+        transform: scale(1.4) rotate(0deg);
+      }
 }
